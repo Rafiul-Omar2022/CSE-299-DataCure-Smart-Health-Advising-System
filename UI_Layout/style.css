@@ -46,7 +46,11 @@ body {
   align-items: center;
   border-radius: 20%;
   mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0));
-  -webkit-mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0));
+  -webkit-mask-image: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 1) 60%,
+    rgba(0, 0, 0, 0)
+  );
 }
 
 /* Centered Logo inside Triangle */
@@ -98,8 +102,6 @@ h2 {
   box-shadow: 2px 2px 8px rgba(11, 9, 9, 0.1);
 }
 
-
-
 /* Sign-in page container */
 .signin-container {
   display: flex;
@@ -128,10 +130,10 @@ h2 {
 
 /* Adjusted image width */
 .signin-image img {
-    width: 400%; /* Adjust width as needed */
-    max-width: 400px; /* Set a max-width to maintain a good size */
-    display: block;
-    margin: 0 auto; /* Centers the image */
+  width: 400%; /* Adjust width as needed */
+  max-width: 400px; /* Set a max-width to maintain a good size */
+  display: block;
+  margin: 0 auto; /* Centers the image */
 }
 
 /* Right side - sign-in form */
@@ -194,7 +196,6 @@ h2 {
   color: #0099cc;
   text-decoration: none;
 }
-
 
 /* Sign-up page container */
 .signup-container {

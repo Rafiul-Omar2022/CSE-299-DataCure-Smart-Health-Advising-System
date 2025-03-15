@@ -1,7 +1,11 @@
+import Login from "./Pages/Login";
+import Signup from "./Pages/Signup";
+
 function App() {
   return (
     <>
-      <p className="text-2xl text-center">This React + tailwindCss setup</p>
+      <Login />
+      <Signup />
     </>
   );
 }
