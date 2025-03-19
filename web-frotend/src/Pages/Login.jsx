@@ -1,6 +1,6 @@
 export default function Login() {
   return (
-    <div className="bg-blue-400 flex justify-center items-center min-h-screen">
+    <div className=" flex justify-center items-center min-h-screen">
       <div className="signin-container flex max-w-4xl w-full bg-white rounded-lg shadow-lg overflow-hidden">
         {/* <!-- Left side - Image --> */}
         <div className="signin-image w-1/2 flex items-center justify-center bg-blue-400 p-12">
