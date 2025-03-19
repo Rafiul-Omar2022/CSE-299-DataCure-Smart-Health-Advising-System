@@ -1,7 +1,7 @@
 import Login from "./Pages/Login";
 import Signup from "./Pages/Signup";
 
-function App() {
+export default function App() {
   return (
     <>
       <Login />
@@ -9,5 +9,3 @@ function App() {
     </>
   );
 }
-
-export default App;
