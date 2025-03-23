@@ -12,7 +12,7 @@ function Signup() {
                 <input
                   type="text"
                   placeholder="Full Name"
-                  required
+                  requireds
                   className="w-full p-3 text-lg outline-none"
                 />
               </div>
