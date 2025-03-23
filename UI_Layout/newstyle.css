@@ -1,0 +1,342 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #000;
+}
+
+/* Header Section */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 8%;
+    background-color: white;
+    position: relative;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #004aad;
+}
+
+.tagline, .hotline {
+    font-size: 14px;
+    color: #555;
+    font-weight: bold;
+}
+
+.hotline {
+    position: absolute;
+    top: 10px;
+    right: 8%;
+    font-size: 14px;
+    color: #555;
+    font-weight: bold;
+}
+
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 8%;
+    background-color: skyblue;
+    position: relative;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: black; /* Set text color to black */
+    font-size: 16px;
+    font-weight: bold;
+}
+.auth-buttons {
+    position:absolute;
+    right: 8%;
+    display: flex;
+    gap: 10px;
+}
+
+.auth-buttons .login, .auth-buttons .signup {
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.auth-buttons .login {
+    color: #004aad;
+    border: 1px solid #004aad;
+    background: white;
+}
+
+.auth-buttons .signup {
+    background: #004aad;
+    color: #fff;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 8%;
+    background: linear-gradient(to bottom, #f8f9fa, #eaeff5);
+    position: relative;
+}
+
+.hero-content, .hero-text {
+    flex: 1;
+    max-width: 50%;
+}
+
+.hero-content h1, .hero-text h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: black;
+}
+
+.hero-content p, .hero-text p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #666;
+}
+
+.underline {
+    text-decoration: underline;
+    display: block;
+    margin-top: 5px;
+}
+
+/* Call To Action */
+.cta {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.arrow {
+    font-size: 20px;
+    color: blue;
+    margin-right: 10px;
+}
+
+.hero-text .btn, .appointment-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 18px;
+    background: #004aad;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+}
+
+/* Doctor Illustration */
+.doctor-image {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 300px;
+    text-align: center;
+}
+
+.doctor-image img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+/* Experience Box */
+.experience-box {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 400px;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.experience-box h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+.experience-item {
+    background-color: #004aad;
+    color: white;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+/* How It Works Section */
+.how-it-works {
+    text-align: center;
+    padding: 50px 8%;
+    background: #f8f9fa;
+}
+
+.section-gap {
+    margin-bottom: 20px; /* Adjust the value as needed */
+}
+
+
+/* Workflow Container */
+.workflow-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    max-width: 100%;
+}
+
+/* Steps */
+.workflow-step {
+    text-align: center;
+    width: 120px;
+}
+
+.workflow-step img {
+    width: 60px;
+    height: auto;
+    transition: transform 0.2s ease-in-out;
+}
+
+.workflow-step img:hover {
+    transform: scale(1.1);
+}
+
+.workflow-step p {
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Arrows */
+.arrow {
+    font-size: 24px;
+    font-weight: bold;
+    color: #004aad;
+}
+
+/* Rightward and Leftward Arrows */
+.right-arrow, .left-arrow {
+    margin: 0 15px;
+}
+
+/* Vertical Arrow */
+.vertical-arrow-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end; /* Aligns the arrow to the right */
+    margin-right: 300px; /* Adjust the value to perfectly align it under "Online Payment" */
+}
+
+.down-arrow {
+    font-size: 24px;
+    font-weight: bold;
+    color: #004aad;
+    margin: 10px 0;
+}
+
+
+/* Testimonials Section */
+.testimonials {
+    text-align: center;
+    padding: 50px 8%;
+    background: #f8f9fa;
+}
+
+.testimonials h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.review-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.review-box {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 250px;
+}
+
+.review-box h3 {
+    font-size: 18px;
+    color: #004aad;
+}
+
+.review-box p {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.review-box .stars {
+    margin-top: 8px;
+    color: #ffa500;
+}
+
+.review-header {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between image and text */
+}
+
+.review-icon {
+    width: 40px; /* Adjust size as needed */
+    height: 40px;
+    border-radius: 50%; /* Makes the image circular */
+}
+
+.section-gap {
+    margin-bottom: 20px; /* Creates gap before Sylvia Plath's section */
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #004aad;
+    color: #fff;
+    font-size: 14px;
+}
