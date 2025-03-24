@@ -1,19 +1,11 @@
-import { NavbarWithMegaMenu } from "./Pages/Components/NavBar";
-import Login from "./Pages/Login";
-import Signup from "./Pages/Signup";
-
-import { Routes, Route, BrowserRouter } from "react-router-dom";
-
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import Home from "./Pages/Home/Home";
 export default function App() {
   return (
     <>
       <BrowserRouter>
-        <header>
-          <NavbarWithMegaMenu />
-        </header>
         <Routes>
-          <Route path="/login" element={<Login />} />
-          <Route path="/signup" element={<Signup />} />
+          <Route path="/" element={<Home />} />
         </Routes>
       </BrowserRouter>
     </>
