@@ -4,12 +4,16 @@ import HomeHeader from "./HomeHeader";
 import Navbar from "./Navbar";
 
 import Login from "../Login/Login";
+import Feature from "./Feature";
+import Hero from "./Hero";
 
 export default function Home() {
   return (
     <>
       <HomeHeader />
       <Navbar />
+      <Hero />
+      <Feature />
       <Testimonial />
       <Footer />
     </>
