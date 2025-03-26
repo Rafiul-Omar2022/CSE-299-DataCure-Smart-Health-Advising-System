@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard - Appointment</title>
+    <link rel="stylesheet" href="userappointment.css">
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <a href="landing.html" class="logo-link">
+            <h2 class="logo">DataCure</h2>
+        </a>          
+        <ul>
+            <li><a href="userdash.html">Overview</a></li>
+            <li class="active"><a href="#">Appointment</a></li>
+            <li><a href="userreport.html">Report</a></li>
+            <li><a href="userpayment.html">Payment</a></li>
+            <li><a href="usergraph.html">Health Graph</a></li>
+            <li><a href="usermeet.html">Virtual Meeting Room</a></li>
+        </ul>
+        <div class="settings">
+            <a href="#">Profile</a>
+            <a href="landing.html">Logout</a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+        <!-- Navbar -->
+        <div class="navbar">
+            <h3>Appointment</h3>
+            <div class="user-profile">
+                <img src="images/laden.jpeg" alt="User Profile">
+                <span>Osama Bin Laden</span>
+            </div>
+        </div>
+
+        <!-- Appointment Section -->
+        <div class="appointment-section">
+            <div class="appointment-tabs">
+                <button class="active-tab">Appointment Details</button>
+                <button><li><a href="finddoc.html">Find Doctor</a></li>
+                </button>
+                <button>Select a Specialist</button>
+            </div>
+
+            <h4>Upcoming / Recent</h4>
+            
+            <div class="appointment-card">
+                <div class="user-info">
+                    <img src="images/laden.jpeg" alt="User Avatar">
+                    <div>
+                        <p><strong>Name:</strong> Osama Bin Laden</p>
+                        <p><strong>Gender:</strong> Male &nbsp; <strong>Age:</strong> 21</p>
+                        <p><strong>Phone Number:</strong> 01696969696</p>
+                    </div>
+                    <span class="receipt-number">Appointment Receipt #144343</span>
+                </div>
+                <hr>
+                <div class="appointment-info">
+                    <h3>Appointment Information</h3>
+                    <p><strong>Dr. Anthony James Mansul</strong></p>
+                    <p>MBBS, MRCP</p>
+                    <a href="https://meet.google.com/hbw-aywp-wnj" class="virtual-link" target="_blank">Virtual Meet Link</a>
+                </div>
+                <div class="appointment-footer">
+                    <p><strong>Payment:</strong> <span class="paid-status">Paid</span></p>
+                    <p><strong>Appointment Date:</strong> 12/05/25</p>
+                    <p><strong>Time:</strong> 12:40 PM</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
