@@ -14,7 +14,7 @@ export default function Hero() {
           </p>
           <div className="flex items-center space-x-3">
             <Link
-              to="/login"
+              to="/user-dashboard"
               className="text-sm md:text-lg text-white bg-blue-600 px-6 py-3 rounded-full hover:bg-blue-700"
             >
               Book an Appointment

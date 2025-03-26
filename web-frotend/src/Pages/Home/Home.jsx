@@ -2,8 +2,6 @@ import Testimonial from "./Testimonial";
 import Footer from "../../Component/Footer";
 import HomeHeader from "./HomeHeader";
 import Navbar from "./Navbar";
-
-import Login from "../Login/Login";
 import Feature from "./Feature";
 import Hero from "./Hero";
 
