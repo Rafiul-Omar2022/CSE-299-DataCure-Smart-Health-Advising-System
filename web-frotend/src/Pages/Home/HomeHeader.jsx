@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function HomeHeader() {
   return (
     <>
@@ -10,7 +12,8 @@ export default function HomeHeader() {
             </div>
           </div>
           <div class="text-sm text-gray-600 font-semibold">
-            Hotline: +880182354534
+            <h1>Hotline: +880182354534</h1>
+            <Link className="underline text-blue-700">Download App</Link>
           </div>
         </div>
       </header>
