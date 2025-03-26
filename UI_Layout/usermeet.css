@@ -1,0 +1,145 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 200px;
+    height: 100vh;
+    background: #fff;
+    border-right: 1px solid #ddd;
+    position: fixed;
+    padding: 20px;
+}
+
+.logo-link {
+    text-decoration: none; /* Remove underline */
+}
+
+.sidebar h2 {
+    color: #004aad;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+.sidebar ul li.active {
+    background: #e9ecef;
+    font-weight: bold;
+}
+
+.settings {
+    margin-top: 20px;
+}
+
+.settings a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 10px 0;
+}
+
+/* Content */
+.content {
+    margin-left: 260px;
+    padding: 15px;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* User Profile */
+.user-profile {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 15px;
+    border-radius: 5%;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.user-profile img {
+    width: 50px;
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* Meeting Info */
+.meeting-info {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+.meeting-info p {
+    margin: 10px 0;
+}
+
+.status {
+    font-weight: bold;
+}
+
+.status.available {
+    color: green;
+}
+
+.status.queue {
+    color: green;
+}
+
+.status.closed {
+    color: green;
+}
+
+/* JOIN Button */
+.join-btn {
+    display: inline-block;
+    background-color: #28a745; /* Green button */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.join-btn:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+/* Meeting Image */
+.meeting-image {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.meeting-image img {
+    width: 70%;
+    max-width: 600px;
+    border-radius: 10px;
+}
