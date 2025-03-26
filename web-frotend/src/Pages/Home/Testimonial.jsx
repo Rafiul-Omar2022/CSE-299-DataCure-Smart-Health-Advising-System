@@ -43,7 +43,7 @@ export default function Testimonial() {
   return (
     <section className="text-center py-16 px-8 bg-gray-100">
       <h2 className="text-3xl font-semibold mb-6">Testimonials</h2>
-      <div className="flex flex-col md:flex-row items-center md:justify-center gap-8">
+      <div className="flex justify-center gap-8">
         {
           // getting each object from testimonialData
           testimonialData.map((data) => (

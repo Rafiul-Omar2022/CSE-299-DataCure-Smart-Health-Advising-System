@@ -2,10 +2,10 @@ import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
-    <nav className="flex flex-col md:flex-row items-center justify-between p-5 border-t-2 w-full">
-      <div className="md:w-1/3 hidden md:flex">.</div>
-      <div className="flex justify-center md:w-1/3">
-        <div className="flex flex-col md:flex-row justify-between items-center gap-7">
+    <nav className="flex items-center justify-between p-5 border-t-2 w-full">
+      <div className="w-1/3">.</div>
+      <div className="flex justify-center w-1/3">
+        <div className="flex justify-between items-center gap-7">
           <Link
             to="/"
             className="text-md font-medium text-blue-900 hover:text-blue-900 hover:underline"
@@ -18,9 +18,12 @@ export default function Navbar() {
           <Link className="text-md font-medium hover:text-blue-900 hover:underline">
             Contact
           </Link>
+          <Link className="text-md font-medium hover:text-blue-900 hover:underline">
+            Download App
+          </Link>
         </div>
       </div>
-      <div className="flex justify-end mt-5 md:w-1/3">
+      <div className="flex justify-end w-1/3">
         <div className="flex space-x-5">
           <button class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4  border-gray-400 rounded shadow">
             Login
