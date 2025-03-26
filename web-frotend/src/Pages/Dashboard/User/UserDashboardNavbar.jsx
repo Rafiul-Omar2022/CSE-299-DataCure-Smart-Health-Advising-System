@@ -49,7 +49,9 @@ export default function UserDashboardNavbar() {
 // url path to dashboard name
 const dashboardName = {
   "/user-dashboard": "Overview",
-  "/user-dashboard/appointmnet": "Appointmnet",
+  "/user-dashboard/appointment": "Appointment",
+  "/user-dashboard/appointment/find-doctor": "Appointment: Doctor",
+  "/user-dashboard/appointment/find-specialist": "Appointment: Specialist",
   "/user-dashboard/report": "Report",
   "/user-dashboard/payment": "Payment",
   "/user-dashboard/graph": "Health graph",

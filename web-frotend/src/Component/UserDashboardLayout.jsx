@@ -6,9 +6,9 @@ export default function UserDashboardLayout() {
     <div className="grid grid-cols-12 gap-4">
       {/* Sidebar */}
       <div className="w-52 h-screen bg-white border-r border-gray-300 p-5">
-        <a href="landing.html" className="logo-link">
+        <Link to="/" className="logo-link">
           <h2 className="text-blue-700 mb-5 text-2xl">DataCure</h2>
-        </a>
+        </Link>
         {
           // Sidebar navigation
           dashBoardNavigation
@@ -51,7 +51,7 @@ const dashBoardNavigation = (
     </NavLink>
 
     <NavLink
-      to="appointmnet"
+      to="appointment"
       className="p-2 font-bold rounded-sm"
       style={({ isActive }) => (isActive ? activeStyle : null)}
     >
