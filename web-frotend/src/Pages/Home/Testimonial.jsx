@@ -32,7 +32,7 @@ const TestimonialCard = ({ data }) => {
         <img src={image} alt={name} className="w-12 h-12 rounded-full" />
         <h3 className="text-lg font-semibold text-blue-700">{name}</h3>
       </div>
-      <p className="text-sm text-gray-600 mb-4">{text}</p>
+      <p className="text-start text-sm text-gray-600 mb-4">{text}</p>
       <div className="text-yellow-500">{stars}</div>
     </div>
   );
@@ -43,7 +43,7 @@ export default function Testimonial() {
   return (
     <section className="text-center py-16 px-8 bg-gray-100">
       <h2 className="text-3xl font-semibold mb-6">Testimonials</h2>
-      <div className="flex justify-center gap-8">
+      <div className="flex flex-col md:flex-row items-center justify-center gap-8">
         {
           // getting each object from testimonialData
           testimonialData.map((data) => (
