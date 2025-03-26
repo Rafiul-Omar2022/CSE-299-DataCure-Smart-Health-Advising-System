@@ -22,12 +22,18 @@ export default function Navbar() {
       </div>
       <div className="flex justify-end md:w-1/3 mt-5">
         <div className="flex space-x-5">
-          <button class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4  border-gray-400 rounded shadow">
+          <Link
+            to="/login"
+            class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4  border-gray-400 rounded shadow"
+          >
             Login
-          </button>
-          <button class="text-md bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-10 rounded shadow-md">
+          </Link>
+          <Link
+            to="/signup"
+            class="text-md bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-10 rounded shadow-md"
+          >
             Signup
-          </button>
+          </Link>
         </div>
       </div>
     </nav>

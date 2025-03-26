@@ -3,6 +3,8 @@ import Footer from "../../Component/Footer";
 import HomeHeader from "./HomeHeader";
 import Navbar from "./Navbar";
 
+import Login from "../Login/Login";
+
 export default function Home() {
   return (
     <>
