@@ -23,17 +23,19 @@ export default function FindDoctor() {
       {filteredDoctors.length > 0 ? (
         filteredDoctors.map((doctor, index) => (
           <div key={index} className="bg-white p-6 rounded-lg shadow-md mb-6">
-            <div className="flex justify-between items-center">
+            <div className="flex items-center justify-between">
               <div className="flex items-center">
                 <img
                   src={doctor.image}
                   alt={doctor.name}
                   className="w-20 h-20 rounded-full mr-4"
                 />
-                <div className="flex-1">
-                  <h4 className="text-xl text-blue-600">{doctor.name}</h4>
-                  <p>{doctor.speciality}</p>
-                  <p className="mt-2">{doctor.description}</p>
+                <div>
+                  <h4 className="text-xl font-semibold text-blue-600">
+                    {doctor.name}
+                  </h4>
+                  <p className="text-gray-600">{doctor.specialty}</p>
+                  <p className="text-gray-500">{doctor.description}</p>
                 </div>
               </div>
               <div className="flex flex-col items-end space-y-2">
@@ -42,7 +44,7 @@ export default function FindDoctor() {
                 </button>
                 <a
                   href="docdetails.html"
-                  className="text-black font-bold hover:underline pt-5"
+                  className="text-blue-600 font-bold block mb-2 pt-5"
                 >
                   More Details
                 </a>
@@ -63,21 +65,21 @@ export default function FindDoctor() {
 const doctors = [
   {
     name: "Dr. Vladimir Lenin",
-    speciality: "MBBS, MS Neurologist",
+    specialty: "MBBS, MS Neurologist",
     description:
       "Serves for: Insomnia, Multiple Sclerosis, Epilepsy, Neuropathic Pain, Dementia, Parkinson's Disease",
     image: "https://rafiulomar.sirv.com/CSE299-DataCure/images/lenin.jpg",
   },
   {
     name: "Dr. Che Guevara",
-    speciality: "MBBS, PhD in Endocrinology",
+    specialty: "MBBS, PhD in Endocrinology",
     description:
       "Serves for: Diabetes, Obesity, Thyroid Disorders, Metabolic Syndrome",
     image: "https://rafiulomar.sirv.com/CSE299-DataCure/images/guevara.jpg",
   },
   {
     name: "Dr. Karl Marx",
-    speciality: "MBBS, MD in Cardiology",
+    specialty: "MBBS, MD in Cardiology",
     description:
       "Serves for: Hypertension, Coronary Artery Disease, Heart Failure",
     image: "https://rafiulomar.sirv.com/CSE299-DataCure/images/marx.jpg",
