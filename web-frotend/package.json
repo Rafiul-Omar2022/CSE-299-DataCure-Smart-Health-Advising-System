@@ -1,4 +1,5 @@
 {
+  "homepage": "https://github.com/Rafiul-Omar2022/CSE-299-DataCure-Smart-Health-Advising-System",
   "name": "web-frotend",
   "private": true,
   "version": "0.0.0",
@@ -6,7 +7,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
