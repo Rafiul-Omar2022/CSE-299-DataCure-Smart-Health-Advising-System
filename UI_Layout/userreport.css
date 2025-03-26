@@ -1,0 +1,144 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 200px;
+    height: 100vh;
+    background: #fff;
+    border-right: 1px solid #ddd;
+    position: fixed;
+    padding: 20px;
+}
+
+.logo-link {
+    text-decoration: none;
+}
+
+.sidebar h2 {
+    color: #004aad;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+.sidebar ul li.active {
+    background: #e9ecef;
+    font-weight: bold;
+}
+
+.settings {
+    margin-top: 20px;
+}
+
+.settings a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 10px 0;
+}
+
+/* Content */
+.content {
+    margin-left: 260px;
+    padding: 15px;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* User Profile */
+.user-profile {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 15px;
+    border-radius: 5%;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.user-profile img {
+    width: 50px;
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* Search Bar */
+.search-bar {
+    margin: 20px 0;
+    padding: 10px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar label {
+    font-weight: bold;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Report List */
+.report-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.report-card {
+    background: #e9ecef;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.report-card h4 {
+    margin: 0;
+    color: #004aad;
+}
+
+.report-card p {
+    margin: 5px 0;
+}
+
+.report-card a {
+    color: #004aad;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.report-card a:hover {
+    text-decoration: underline;
+}

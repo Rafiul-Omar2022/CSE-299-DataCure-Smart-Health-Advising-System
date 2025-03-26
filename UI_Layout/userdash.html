@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="userdash.css">
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <a href="landing.html" class="logo-link">
+            <h2 class="logo">DataCure</h2>
+          </a>          
+        <ul>
+            <li class="active"><a href="#">Overview</a></li>
+            <li><a href="userappointment.html">Appointment</a></li>
+            <li><a href="userreport.html">Report</a></li>
+            <li><a href="userreport.html">Payment</a></li>
+            <li><a href="usergraph.html">Health Graph</a></li>
+            <li><a href="usermeet.html">Virtual Meeting Room</a></li>
+        </ul>
+        <div class="settings">
+            <a href="#">Profile</a>
+            <a href="landing.html">Logout</a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+        <!-- Navbar -->
+        <div class="navbar">
+            <h3>Overview</h3>
+            <div class="user-profile">
+                <img src="images/laden.jpeg" alt="User Profile">
+                <span>    Osama Bin Laden    </span>
+            </div>
+        </div>
+
+        <!-- Recent Summary -->
+        <div class="recent-summary">
+            <div class="summary-card bg-light-red">
+                <img src="images/usercalicon.png" alt="Calendar Icon">
+                <p>4 Days Left</p>
+                <strong>12/05/2025</strong>
+                <p>Appointment Date</p>
+            </div>
+            <div class="summary-card bg-light-yellow">
+                <img src="images/userpoayicon.png" alt="Payment Icon">
+                <p>2400 TK</p>
+                <strong>Pending</strong>
+                <p>Payment Status</p>
+            </div>
+            <div class="summary-card bg-light-green">
+                <img src="images/userrepicon.png" alt="Report Icon">
+                <p>Pending</p>
+                <p>Report Status</p>
+            </div>
+        </div>
+
+<!-- Recent Appointment Table -->
+<h3>Recent Appointment</h3>
+<table style="margin-top: 20px;">
+    <thead>
+        <tr>
+            <th>Appointment ID</th>
+            <th>Doctor</th>
+            <th>Date</th>
+            <th>Amount</th>
+            <th>Payment</th>
+            <th>Status</th>
+            <th>Details</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>#12033</td>
+            <td>Dr. Austin Elsbree</td>
+            <td>12/02/24</td>
+            <td>5200 Tk</td>
+            <td>Pending</td>
+            <td>Pending</td>
+            <td><a href="#">Visit</a></td>
+        </tr>
+    </tbody>
+</table>
+
+<!-- Past Appointment List -->
+<h3>Past Appointment List</h3>
+
+<!-- Search Bar on the Right -->
+<div style="display: flex; justify-content: flex-end; margin-bottom: 10px;">
+    <input type="text" id="searchBar" placeholder="Search appointments..." onkeyup="searchAppointments()" style="padding: 5px; width: 200px;">
+</div>
+
+<table style="margin-top: 20px;">
+    <thead>
+        <tr>
+            <th>Appointment ID</th>
+            <th>Doctor</th>
+            <th>Date</th>
+            <th>Amount</th>
+            <th>Payment</th>
+            <th>Status</th>
+            <th>Details</th>
+        </tr>
+    </thead>
+    <tbody id="appointmentList">
+        <!-- Sample Rows -->
+        <tr>
+            <td>#12033</td>
+            <td>Dr. Austin Elsbree</td>
+            <td>12/02/24</td>
+            <td>5200 Tk</td>
+            <td>Clear</td>
+            <td>Approved</td>
+            <td><a href="#">Visit</a></td>
+        </tr>
+        <tr>
+            <td>#12034</td>
+            <td>Dr. Ben Smith</td>
+            <td>13/02/24</td>
+            <td>3200 Tk</td>
+            <td>Clear</td>
+            <td>Approved</td>
+            <td><a href="#">Visit</a></td>
+        </tr>
+        <tr>
+            <td>#12035</td>
+            <td>Dr. Clara Brown</td>
+            <td>14/02/24</td>
+            <td>4000 Tk</td>
+            <td>Pending</td>
+            <td>Pending</td>
+            <td><a href="#">Visit</a></td>
+        </tr>
+        <tr>
+            <td>#12036</td>
+            <td>Dr. David Wilson</td>
+            <td>15/02/24</td>
+            <td>5400 Tk</td>
+            <td>Clear</td>
+            <td>Approved</td>
+            <td><a href="#">Visit</a></td>
+        </tr>
+        <tr>
+            <td>#12037</td>
+            <td>Dr. Emily Davis</td>
+            <td>16/02/24</td>
+            <td>6000 Tk</td>
+            <td>Clear</td>
+            <td>Approved</td>
+            <td><a href="#">Visit</a></td>
+        </tr>
+        <tr>
+            <td>#12038</td>
+            <td>Dr. Fiona Lewis</td>
+            <td>17/02/24</td>
+            <td>3200 Tk</td>
+            <td>Pending</td>
+            <td>Pending</td>
+            <td><a href="#">Visit</a></td>
+        </tr>
+        <tr>
+            <td>#12039</td>
+            <td>Dr. George Hall</td>
+            <td>18/02/24</td>
+            <td>5000 Tk</td>
+            <td>Clear</td>
+            <td>Approved</td>
+            <td><a href="#">Visit</a></td>
+        </tr>
+        <tr>
+            <td>#12040</td>
+            <td>Dr. Harry Clark</td>
+            <td>19/02/24</td>
+            <td>5300 Tk</td>
+            <td>Pending</td>
+            <td>Pending</td>
+            <td><a href="#">Visit</a></td>
+        </tr>
+        <tr>
+            <td>#12041</td>
+            <td>Dr. Isabella Turner</td>
+            <td>20/02/24</td>
+            <td>5200 Tk</td>
+            <td>Clear</td>
+            <td>Approved</td>
+            <td><a href="#">Visit</a></td>
+        </tr>
+        <tr>
+            <td>#12042</td>
+            <td>Dr. Jack Anderson</td>
+            <td>21/02/24</td>
+            <td>4800 Tk</td>
+            <td>Clear</td>
+            <td>Approved</td>
+            <td><a href="#">Visit</a></td>
+        </tr>
+    </tbody>
+</table>
+
+<script>
+    function searchAppointments() {
+        var input, filter, table, rows, cells, i, j, txtValue;
+        input = document.getElementById("searchBar");
+        filter = input.value.toLowerCase();
+        table = document.querySelector("table");
+        rows = table.getElementsByTagName("tr");
+
+        // Loop through all table rows, except the header
+        for (i = 1; i < rows.length; i++) {
+            cells = rows[i].getElementsByTagName("td");
+            var matchFound = false;
+            // Loop through all cells in the row
+            for (j = 0; j < cells.length; j++) {
+                txtValue = cells[j].textContent || cells[j].innerText;
+                if (txtValue.toLowerCase().indexOf(filter) > -1) {
+                    matchFound = true;
+                    break;
+                }
+            }
+            // Display the row if it matches the search query
+            if (matchFound) {
+                rows[i].style.display = "";
+            } else {
+                rows[i].style.display = "none";
+            }
+        }
+    }
+</script>
+
+</html>
