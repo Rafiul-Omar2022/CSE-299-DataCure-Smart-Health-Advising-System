@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Information</title>
+    <link rel="stylesheet" href="hosdocinfo.css">
+    <!-- Add Bootstrap CSS link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <a href="landing.html" class="logo-link">
+            <h2 class="logo">DataCure</h2>
+        </a>          
+        <ul>
+            <li><a href="hosdash.html">Overview</a></li>
+            <li class="active"><a href="hosdocinfo.html">Doctor</a></li>
+            <li><a href="hospatient.html">Patient</a></li>
+        </ul>
+        <div class="settings">
+            <a href="landing.html">Logout</a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+        <!-- Navbar -->
+        <div class="navbar">
+            <div class="navbar-left">
+                <h3>Doctor</h3>
+            </div>
+            <div class="navbar-right">
+                <a href="#" class="hospital-btn">
+                    <i class="bi bi-house-door"></i>
+                </a>
+                <div class="user-profile">
+                    <img src="images/laden.jpeg" alt="User Profile">
+                    <span>Osama Bin Laden</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Doctor Information Section -->
+        <div class="doctor-info">
+            <div class="back-btn">
+                <a href="hosdoc.html" class="btn btn-link"><- Back</a>
+            </div>
+            
+            <!-- Personal Information Section -->
+            <section class="personal-info">
+                <h4>Personal Information</h4>
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="fullName">Full Name</label>
+                            <input type="text" class="form-control" id="fullName" placeholder="Full Name">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="gender">Gender</label>
+                            <select id="gender" class="form-control">
+                                <option>Male</option>
+                                <option>Female</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="dob">Date of Birth</label>
+                            <input type="date" class="form-control" id="dob">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="contactNumber">Contact Number</label>
+                            <input type="text" class="form-control" id="contactNumber" placeholder="Contact Number">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="email">Email Address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Email Address">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="photoUpload">Photo Upload</label>
+                            <input type="file" class="form-control-file" id="photoUpload">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary assign-doctor-btn">Assign Doctor</button>
+                </form>
+            </section>
+
+            <!-- Professional Information Section -->
+            <section class="professional-info">
+                <h4>Professional Information</h4>
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="specialization">Specialization</label>
+                            <input type="text" class="form-control" id="specialization" placeholder="Specialization">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="degrees">Degrees</label>
+                            <input type="text" class="form-control" id="degrees" placeholder="Degrees">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="medicalLicense">Medical License Number</label>
+                            <input type="text" class="form-control" id="medicalLicense" placeholder="License Number">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="issuingBoard">Issuing Medical Board</label>
+                            <input type="text" class="form-control" id="issuingBoard" placeholder="Medical Board">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="yearsExperience">Years of Experience</label>
+                            <input type="number" class="form-control" id="yearsExperience" placeholder="Years of Experience">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="currentHospital">Current Hospital/Clinic</label>
+                            <input type="text" class="form-control" id="currentHospital" placeholder="Hospital/Clinic">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="consultationFees">Consultation Fees</label>
+                            <input type="text" class="form-control" id="consultationFees" placeholder="Fees">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="availability">Availability</label>
+                            <input type="text" class="form-control" id="availability" placeholder="Availability">
+                        </div>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </div>
+
+    <!-- Add Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
