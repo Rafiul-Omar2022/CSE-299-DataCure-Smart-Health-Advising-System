@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="hosdoc.css">
+    
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <a href="landing.html" class="logo-link">
+            <h2 class="logo">DataCure</h2>
+        </a>          
+        <ul>
+            <li><a href="hosdash.html">Overview</a></li>
+            <li class="active"><a href="hosdoc.html">Doctor</a></li>
+            <li><a href="hospatient.html">Patient</a></li>
+        </ul>
+        <div class="settings">
+            <a href="landing.html">Logout</a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+        <!-- Navbar -->
+        <div class="navbar">
+            <div class="navbar-left">
+                <h3>Patients</h3>
+            </div>
+            <div class="navbar-right">
+                <a href="#" class="hospital-btn">
+                    <i class="bi bi-house-door"></i>
+                </a>
+                <div class="user-profile">
+                    <img src="images/laden.jpeg" alt="User Profile">
+                    <span>Osama Bin Laden</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content: Doctor Section -->
+
+         <!-- Button -->
+    <div class="button-container">
+        <button class="assign-doctor-btn">Assign Doctor</button>
+    </div>
+    <div class="free-space"></div>
+
+
+            <!-- Doctor List Section -->
+            <div class="recent-appointments">
+                <h5>Doctor List</h5>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Doctor ID</th>
+                            <th>Doctor</th>
+                            <th>Speciality</th>
+                            <th>Add Report</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#12033</td>
+                            <td>Dr. Vladimir Lenin</td>
+                            <td>Cardiology</td>
+                            <td><a href="#">Upload</a></td>
+                        </tr>
+                        <tr>
+                            <td>#12034</td>
+                            <td>Dr. Che Guevara</td>
+                            <td>Neurology</td>
+                            <td><a href="#">Upload</a></td>
+                        </tr>
+                        <tr>
+                            <td>#12035</td>
+                            <td>Dr. Karl Marx</td>
+                            <td>Surgery</td>
+                            <td><a href="#">Upload</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

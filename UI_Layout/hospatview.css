@@ -1,0 +1,160 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 200px;
+    height: 100vh;
+    background: #fff;
+    border-right: 1px solid #ddd;
+    position: fixed;
+    padding: 20px;
+}
+
+.logo-link {
+    text-decoration: none; /* Remove underline */
+}
+
+.sidebar h2 {
+    color: #004aad;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+.sidebar ul li.active {
+    background: #e9ecef;
+    font-weight: bold;
+}
+
+.settings {
+    margin-top: 20px;
+}
+
+.settings a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 10px 0;
+}
+
+/* Content */
+.content {
+    margin-left: 260px;
+    padding: 15px;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-left h3 {
+    margin: 0;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.hospital-btn {
+    text-decoration: none;
+    color: #004aad;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 15px;
+    border-radius: 5%;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.user-profile img {
+    width: 50px;
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* Patient Section */
+.patient-info {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.patient-id h5 {
+    color: #004aad;
+    margin-bottom: 20px;
+}
+
+.patient-card {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.profile {
+    flex-shrink: 0;
+}
+
+.profile-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.patient-details p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+h4 {
+    color: #004aad;
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+table td:first-child {
+    font-weight: bold;
+}

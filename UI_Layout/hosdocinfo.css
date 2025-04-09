@@ -1,0 +1,160 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 200px;
+    height: 100vh;
+    background: #fff;
+    border-right: 1px solid #ddd;
+    position: fixed;
+    padding: 20px;
+}
+
+.logo-link {
+    text-decoration: none; /* Remove underline */
+}
+
+.sidebar h2 {
+    color: #004aad;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+.sidebar ul li.active {
+    background: #e9ecef;
+    font-weight: bold;
+}
+
+.settings {
+    margin-top: 20px;
+}
+
+.settings a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 10px 0;
+}
+
+/* Content */
+.content {
+    margin-left: 260px;
+    padding: 15px;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-left h3 {
+    margin: 0;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.hospital-btn {
+    text-decoration: none;
+    color: #004aad;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 15px;
+    border-radius: 5%;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.user-profile img {
+    width: 50px;
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* Doctor Information Section */
+.doctor-info {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.back-btn {
+    margin-bottom: 20px;
+}
+
+.personal-info,
+.professional-info {
+    margin-bottom: 30px;
+}
+
+.personal-info h4,
+.professional-info h4 {
+    font-size: 1.5rem;
+    color: #004aad;
+}
+
+form {
+    margin-top: 10px;
+}
+
+.form-row {
+    margin-bottom: 15px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.assign-doctor-btn {
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: #3e88ea;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    position: absolute;
+    top: 20%;
+    right: 5%; 
+    transform: translateY(-50%); 
+}
+
+
+.assign-doctor-btn:hover {
+    background-color: #003b8c;
+}

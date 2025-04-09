@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Profile</title>
+    <link rel="stylesheet" href="hosdocdetails.css">
+    <!-- Add Bootstrap CSS link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <a href="landing.html" class="logo-link">
+            <h2 class="logo">DataCure</h2>
+        </a>          
+        <ul>
+            <li><a href="hosdash.html">Overview</a></li>
+            <li class="active"><a href="hosdocdetails.html">Doctor</a></li>
+            <li><a href="hospatient.html">Patient</a></li>
+        </ul>
+        <div class="settings">
+            <a href="landing.html">Logout</a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+        <!-- Navbar -->
+        <div class="navbar">
+            <div class="navbar-left">
+                <h3>Doctor Profile</h3>
+            </div>
+            <div class="navbar-right">
+                <a href="#" class="hospital-btn">
+                    <i class="bi bi-house-door"></i>
+                </a>
+                <div class="user-profile">
+                    <img src="images/laden.jpeg" alt="User Profile">
+                    <span>Osama Bin Laden</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Doctor Profile Details -->
+        <div class="doctor-profile">
+            <!-- Back Button -->
+            <a href="hosdoc.html" class="back-btn">&lt; Back</a>
+
+            <!-- Doctor Information Card -->
+            <div class="doctor-info">
+                <img src="images/marx.jpg" alt="Doctor Profile Picture" class="doctor-img">
+                <div class="doctor-details">
+                    <h4>Dr. Karl Marx</h4>
+                    <p><strong>MBBS, MS</strong></p>
+                    <p><em>Ophthalmologist</em></p>
+                    <a href="hosdocdetailsedit.html" class="btn btn-primary">Edit Info</a>
+                </div>
+            </div>
+
+            <!-- About Section -->
+            <div class="about">
+                <h5>About</h5>
+                <p>Dr. Azura Binti Ramlee is an experienced ophthalmologist with over 15 years of practice. She currently works at the Prince Court Medical Centre, Malaysia. Dr. Ramlee specializes in advanced cataract surgeries, LASIK procedures, and eye care treatments.</p>
+            </div>
+
+            <!-- Specializations Section -->
+            <div class="specializations">
+                <h5>Specializations</h5>
+                <ul>
+                    <li>Ophthalmologist</li>
+                </ul>
+            </div>
+
+            <!-- Work Experiences Section -->
+            <div class="work-experience">
+                <h5>Work Experiences</h5>
+                <ul>
+                    <li>Consultant - Prince Court Medical Centre | Malaysia</li>
+                </ul>
+            </div>
+
+            <!-- Education Section -->
+            <div class="education">
+                <h5>Education</h5>
+                <ul>
+                    <li>MBBS - University of Malaya</li>
+                    <li>MS - Universiti Kebangsaan Malaysia</li>
+                    <li>Fellowship in Paediatric Ophthalmology and Strabismus - Sydney, Australia</li>
+                </ul>
+            </div>
+        </div>
+
+    </div> <!-- End Content -->
+
+    <!-- Add Bootstrap JS and Icons (Optional) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

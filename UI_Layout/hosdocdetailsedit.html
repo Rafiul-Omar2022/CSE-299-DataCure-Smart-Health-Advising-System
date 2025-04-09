@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Edit/Add Form</title>
+    <link rel="stylesheet" href="hospatview.css">
+    <!-- Add Bootstrap CSS link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <a href="landing.html" class="logo-link">
+            <h2 class="logo">DataCure</h2>
+        </a>          
+        <ul>
+            <li><a href="hosdash.html">Overview</a></li>
+            <li class="active"><a href="hosdocdetailsedit.html">Doctor</a></li>
+            <li><a href="hospatient.html">Patient</a></li>
+        </ul>
+        <div class="settings">
+            <a href="landing.html">Logout</a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+        <!-- Navbar -->
+        <div class="navbar">
+            <div class="navbar-left">
+                <h3>Doctor Edit/Add</h3>
+            </div>
+            <div class="navbar-right">
+                <a href="#" class="hospital-btn">
+                    <i class="bi bi-house-door"></i>
+                </a>
+                <div class="user-profile">
+                    <img src="images/laden.jpeg" alt="User Profile">
+                    <span>Osama Bin Laden</span>
+                </div>
+            </div>
+        </div>
+
+        <div style="margin-top: 20px;"></div>
+
+        <!-- Doctor Edit/Add Form -->
+        <div class="doctor-form">
+            <!-- Back Link -->
+            <a href="hosdocdetails.html" class="back-link">&lt; Back</a>
+
+            <div style="margin-top: 20px;"></div>
+
+
+            <!-- Personal Information Section -->
+            <div class="section-title" style="font-size: 24px;"><strong>Personal Information</strong></div>
+            <form action="#" method="post" class="doctor-form-content">
+                <div class="form-group">
+                    <label for="full-name">Full Name:</label>
+                    <input type="text" id="full-name" name="full-name" value="" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender" class="form-control">
+                        <option value="Male" selected></option>
+                        <option value="Female">Female</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" value="" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="photo-upload">Photo Upload:</label>
+                    <input type="file" id="photo-upload" name="photo-upload" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="contact-number">Contact Number:</label>
+                    <input type="tel" id="contact-number" name="contact-number" value="" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" value="" class="form-control">
+                    <div style="margin-top: 20px;"></div>
+
+                </div>
+                <button type="submit" class="btn btn-primary update-btn">Update</button>
+            </form>
+            <div style="margin-top: 20px;"></div>
+
+            <!-- Professional Information Section -->
+            <div class="section-title" style="font-size: 24px;"><strong>Professional Information</strong></div>
+            <form action="#" method="post" class="doctor-form-content">
+                <div class="form-group">
+                    <label for="specialization">Specialization(s):</label>
+                    <input type="text" id="specialization" name="specialization" value="" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="degrees">Degrees:</label>
+                    <input type="text" id="degrees" name="degrees" value="" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="medical-license">Medical License Number:</label>
+                    <input type="text" id="medical-license" name="medical-license" value="" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="medical-board">Issuing Medical Board:</label>
+                    <input type="text" id="medical-board" name="medical-board" value="" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="experience">Years of Experience:</label>
+                    <input type="number" id="experience" name="experience" value="" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="hospital">Current Hospital/Clinic:</label>
+                    <input type="text" id="hospital" name="hospital" value="" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="fees">Consultation Fees:</label>
+                    <input type="number" id="fees" name="fees" value="" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="availability">Availability:</label>
+                    <input type="text" id="availability" name="availability" value="" class="form-control">
+                    <div style="margin-top: 20px;"></div>
+
+                </div>
+                <button type="submit" class="btn btn-primary update-btn">Update</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Add Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
