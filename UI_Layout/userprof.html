@@ -1,85 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>User Dashboard</title>
-    <link rel="stylesheet" href="userprof.css">
-</head>
-<body>
+    <link rel="stylesheet" href="userprof.css" />
+    <style>
+      /* General Styles */
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f9fa;
+        margin: 0;
+        padding: 0;
+      }
 
-<!-- Sidebar -->
-<div class="sidebar">
-    <a href="landing.html" class="logo-link">
+      /* Sidebar */
+      .sidebar {
+        width: 200px;
+        height: 100vh;
+        background: #fff;
+        border-right: 1px solid #ddd;
+        position: fixed;
+        padding: 20px;
+      }
+
+      .logo-link {
+        text-decoration: none; /* Remove underline */
+      }
+
+      .sidebar h2 {
+        color: #004aad;
+        margin-bottom: 20px;
+      }
+
+      .sidebar ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      .sidebar ul li {
+        padding: 10px 0;
+      }
+
+      .sidebar ul li a {
+        text-decoration: none;
+        color: black;
+        display: block;
+      }
+
+      .sidebar ul li.active {
+        background: #cbcaca; /* Light grey background */
+        font-weight: bold;
+      }
+
+      .sidebar ul li.active a {
+        color: #000000; /* Greyed-out text */
+        pointer-events: none; /* Disable clicking */
+        opacity: 0.6; /* Make it look inactive */
+      }
+
+      .settings {
+        margin-top: 20px;
+      }
+
+      .settings a {
+        display: block;
+        text-decoration: none;
+        color: black;
+        padding: 10px 0;
+      }
+
+      /* Content */
+      .content {
+        margin-left: 260px;
+        padding: 15px;
+      }
+
+      /* Navbar */
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: white;
+        padding: 10px;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      /* User Profile */
+      .user-profile {
+        display: flex;
+        align-items: center;
+        background: white;
+        padding: 15px;
+        border-radius: 5%;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .user-profile img {
+        width: 50px;
+        height: 45px;
+        border-radius: 50%;
+        margin-right: 10px;
+      }
+
+      /* Profile Section */
+      .profile-section {
+        background: white;
+        padding: 20px;
+        margin-top: 20px;
+        border-radius: 8px;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .profile-card {
+        display: flex;
+        align-items: center;
+      }
+
+      .profile-card img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin-right: 20px;
+      }
+
+      .profile-info p {
+        margin: 5px 0;
+      }
+
+      /* Personal Information Section */
+      .personal-info-section {
+        background: white;
+        padding: 20px;
+        margin-top: 20px;
+        border-radius: 8px;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .info-table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      .info-table th,
+      .info-table td {
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: left;
+      }
+
+      .info-table th {
+        background: #f1f1f1;
+      }
+
+      .edit-btn {
+        background-color: #004aad;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .edit-btn:hover {
+        background-color: #003580;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <a href="landing.html" class="logo-link">
         <h2 class="logo">DataCure</h2>
-    </a>          
-    <ul>
+      </a>
+      <ul>
         <li><a href="userdash.html">Overview</a></li>
         <li><a href="userappointment.html">Appointment</a></li>
         <li><a href="userreport.html">Report</a></li>
         <li><a href="userpayment.html">Payment</a></li>
         <li><a href="usergraph.html">Health Graph</a></li>
         <li><a href="usermeet.html">Virtual Meeting Room</a></li>
-    </ul>
-    <div class="settings">
-        <ul> <!-- Added UL for proper structure -->
-            <li class="active"><a href="#">Profile</a></li>
+      </ul>
+      <div class="settings">
+        <ul>
+          <!-- Added UL for proper structure -->
+          <li class="active"><a href="#">Profile</a></li>
         </ul>
         <a href="landing.html">Logout</a>
+      </div>
     </div>
-</div>
-
 
     <!-- Main Content -->
     <div class="content">
-        <!-- Navbar -->
-        <div class="navbar">
-            <h3>Overview</h3>
-            <div class="user-profile">
-                <img src="images/laden.jpeg" alt="User Profile">
-                <span>    Osama Bin Laden    </span>
-            </div>
+      <!-- Navbar -->
+      <div class="navbar">
+        <h3>Overview</h3>
+        <div class="user-profile">
+          <img src="images/laden.jpeg" alt="User Profile" />
+          <span> Osama Bin Laden </span>
         </div>
+      </div>
 
-        <!-- Profile Section -->
-        <div class="profile-section">
-            <h2>My Profile</h2>
-            <div class="profile-card">
-                <img src="images/laden.jpeg" alt="User Avatar">
-                <div class="profile-info">
-                    <p><strong>User ID:</strong> #911642</p>
-                    <p><strong>Username:</strong> LadenOsama</p>
-                    <p><strong>Email:</strong> osamaladen911@twintower.com</p>
-                    <button class="edit-btn">Edit</button>
-                </div>
-            </div>
+      <!-- Profile Section -->
+      <div class="profile-section">
+        <h2>My Profile</h2>
+        <div class="profile-card">
+          <img src="images/laden.jpeg" alt="User Avatar" />
+          <div class="profile-info">
+            <p><strong>User ID:</strong> #911642</p>
+            <p><strong>Username:</strong> LadenOsama</p>
+            <p><strong>Email:</strong> osamaladen911@twintower.com</p>
+            <button class="edit-btn">Edit</button>
+          </div>
         </div>
+      </div>
 
-        <!-- Personal Information Section -->
-        <div class="personal-info-section">
-            <h2>Personal Information</h2>
-            <table class="info-table">
-                <tr>
-                    <th>First Name</th>
-                    <th>Last Name</th>
-                    <th>Date of Birth</th>
-                    <th>Phone Number</th>
-                    <th>Address</th>
-                    <th>Country</th>
-                    <th>Actions</th>
-                </tr>
-                <tr>
-                    <td>Osama</td>
-                    <td>Laden</td>
-                    <td>12/4/1990</td>
-                    <td>019119119119</td>
-                    <td>Jordan, Dhaka</td>
-                    <td>Bangladesh</td>
-                    <td><button class="edit-btn">Edit</button></td>
-                </tr>
-            </table>
-        </div>
+      <!-- Personal Information Section -->
+      <div class="personal-info-section">
+        <h2>Personal Information</h2>
+        <table class="info-table">
+          <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Date of Birth</th>
+            <th>Phone Number</th>
+            <th>Address</th>
+            <th>Country</th>
+            <th>Actions</th>
+          </tr>
+          <tr>
+            <td>Osama</td>
+            <td>Laden</td>
+            <td>12/4/1990</td>
+            <td>019119119119</td>
+            <td>Jordan, Dhaka</td>
+            <td>Bangladesh</td>
+            <td><button class="edit-btn">Edit</button></td>
+          </tr>
+        </table>
+      </div>
     </div>
-
-</body>
+  </body>
 </html>

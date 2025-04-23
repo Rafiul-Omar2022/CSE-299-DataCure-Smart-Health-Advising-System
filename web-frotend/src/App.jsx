@@ -12,6 +12,8 @@ import UserMeet from "./Pages/Dashboard/User/Meet/UserMeet";
 import FindDoctor from "./Pages/Dashboard/User/Appointment/FindDoctor";
 import FindSpecialist from "./Pages/Dashboard/User/Appointment/FindSpecialist";
 import UserAppointmnetLayout from "./Component/UserAppointmnetLayout";
+import UserPayment from "./Pages/Dashboard/User/Payment/UserPayment";
+import UserProfile from "./Pages/Dashboard/User/Profile/UserProfile";
 
 export default function App() {
   return (
@@ -29,9 +31,10 @@ export default function App() {
               <Route path="find-specialist" element={<FindSpecialist />} />
             </Route>
             <Route path="report" element={<UserReport />} />
-            <Route path="payment" element={<UserReport />} />
+            <Route path="payment" element={<UserPayment />} />
             <Route path="graph" element={<UserGraph />} />
             <Route path="meet" element={<UserMeet />} />
+            <Route path="profile" element={<UserProfile />} />
           </Route>
         </Routes>
       </BrowserRouter>

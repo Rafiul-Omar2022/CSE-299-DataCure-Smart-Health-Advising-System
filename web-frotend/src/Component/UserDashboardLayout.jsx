@@ -14,7 +14,9 @@ export default function UserDashboardLayout() {
           dashBoardNavigation
         }
         <div className="mt-5">
-          <Link className="block py-2">Profile</Link>
+          <Link to="profile" className="block py-2">
+            Profile
+          </Link>
           <a href="landing.html" className="block py-2">
             Logout
           </a>

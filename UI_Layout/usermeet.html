@@ -1,60 +1,213 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>User Dashboard</title>
-    <link rel="stylesheet" href="usermeet.css">
-</head>
-<body>
+    <link rel="stylesheet" href="usermeet.css" />
+    <style>
+      /* General Styles */
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f9fa;
+        margin: 0;
+        padding: 0;
+      }
 
+      /* Sidebar */
+      .sidebar {
+        width: 200px;
+        height: 100vh;
+        background: #fff;
+        border-right: 1px solid #ddd;
+        position: fixed;
+        padding: 20px;
+      }
+
+      .logo-link {
+        text-decoration: none; /* Remove underline */
+      }
+
+      .sidebar h2 {
+        color: #004aad;
+        margin-bottom: 20px;
+      }
+
+      .sidebar ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      .sidebar ul li {
+        padding: 10px 0;
+      }
+
+      .sidebar ul li a {
+        text-decoration: none;
+        color: black;
+        display: block;
+      }
+
+      .sidebar ul li.active {
+        background: #e9ecef;
+        font-weight: bold;
+      }
+
+      .settings {
+        margin-top: 20px;
+      }
+
+      .settings a {
+        display: block;
+        text-decoration: none;
+        color: black;
+        padding: 10px 0;
+      }
+
+      /* Content */
+      .content {
+        margin-left: 260px;
+        padding: 15px;
+      }
+
+      /* Navbar */
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: white;
+        padding: 10px;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      /* User Profile */
+      .user-profile {
+        display: flex;
+        align-items: center;
+        background: white;
+        padding: 15px;
+        border-radius: 5%;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .user-profile img {
+        width: 50px;
+        height: 45px;
+        border-radius: 50%;
+        margin-right: 10px;
+      }
+
+      /* Meeting Info */
+      .meeting-info {
+        text-align: center;
+        margin-top: 30px;
+        font-size: 18px;
+      }
+
+      .meeting-info p {
+        margin: 10px 0;
+      }
+
+      .status {
+        font-weight: bold;
+      }
+
+      .status.available {
+        color: green;
+      }
+
+      .status.queue {
+        color: green;
+      }
+
+      .status.closed {
+        color: green;
+      }
+
+      /* JOIN Button */
+      .join-btn {
+        display: inline-block;
+        background-color: #28a745; /* Green button */
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+      }
+
+      .join-btn:hover {
+        background-color: #218838; /* Darker green on hover */
+      }
+
+      /* Meeting Image */
+      .meeting-image {
+        text-align: center;
+        margin-top: 30px;
+      }
+
+      .meeting-image img {
+        width: 70%;
+        max-width: 600px;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
     <!-- Sidebar -->
     <div class="sidebar">
-        <a href="landing.html" class="logo-link">
-            <h2 class="logo">DataCure</h2>
-        </a>          
-        <ul>
-            <li><a href="userdash.html">Overview</a></li>
-            <li><a href="userappointment.html">Appointment</a></li>
-            <li><a href="userreport.html">Report</a></li>
-            <li><a href="userpayment.html">Payment</a></li>
-            <li><a href="usergraph.html">Health Graph</a></li>
-            <li class="active"><a href="#">Virtual Meeting Room</a></li>
-        </ul>
-        <div class="settings">
-            <a href="#">Profile</a>
-            <a href="landing.html">Logout</a>
-        </div>
+      <a href="landing.html" class="logo-link">
+        <h2 class="logo">DataCure</h2>
+      </a>
+      <ul>
+        <li><a href="userdash.html">Overview</a></li>
+        <li><a href="userappointment.html">Appointment</a></li>
+        <li><a href="userreport.html">Report</a></li>
+        <li><a href="userpayment.html">Payment</a></li>
+        <li><a href="usergraph.html">Health Graph</a></li>
+        <li class="active"><a href="#">Virtual Meeting Room</a></li>
+      </ul>
+      <div class="settings">
+        <a href="#">Profile</a>
+        <a href="landing.html">Logout</a>
+      </div>
     </div>
 
     <!-- Main Content -->
     <div class="content">
-        <!-- Navbar -->
-        <div class="navbar">
-            <h3>Virtual Meeting Room</h3>
-            <div class="user-profile">
-                <img src="images/laden.jpeg" alt="User Profile">
-                <span>Osama Bin Laden</span>
-            </div>
+      <!-- Navbar -->
+      <div class="navbar">
+        <h3>Virtual Meeting Room</h3>
+        <div class="user-profile">
+          <img src="images/laden.jpeg" alt="User Profile" />
+          <span>Osama Bin Laden</span>
         </div>
+      </div>
 
-        <!-- Meeting Info -->
-        <div class="meeting-info">
-            <p>Your allocated Date: <strong>9/11/2001</strong> | Time: <strong>6:46 PM</strong> | Serial No: <strong>2</strong></p>
-            <p>Doctor Status: 
-                <span class="status available">Available</span> | 
-                <span class="status queue">In Queue</span> | 
-                <span class="status closed">Closed</span>
-            </p>
-            <p>Doctor in Serial No: <strong>1</strong></p>
-            <a href="https://meet.google.com/azz-gutp-woh" target="_blank" class="join-btn">JOIN</a>
-        </div>
+      <!-- Meeting Info -->
+      <div class="meeting-info">
+        <p>
+          Your allocated Date: <strong>9/11/2001</strong> | Time:
+          <strong>6:46 PM</strong> | Serial No: <strong>2</strong>
+        </p>
+        <p>
+          Doctor Status: <span class="status available">Available</span> |
+          <span class="status queue">In Queue</span> |
+          <span class="status closed">Closed</span>
+        </p>
+        <p>Doctor in Serial No: <strong>1</strong></p>
+        <a
+          href="https://meet.google.com/azz-gutp-woh"
+          target="_blank"
+          class="join-btn"
+          >JOIN</a
+        >
+      </div>
 
-        <!-- Center Image -->
-        <div class="meeting-image">
-            <img src="images/usermeet.jpeg" alt="Meeting Image">
-        </div>
+      <!-- Center Image -->
+      <div class="meeting-image">
+        <img src="images/usermeet.jpeg" alt="Meeting Image" />
+      </div>
     </div>
-
-</body>
+  </body>
 </html>
