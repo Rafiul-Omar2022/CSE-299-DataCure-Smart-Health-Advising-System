@@ -1,56 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>User Dashboard</title>
-    <link rel="stylesheet" href="hosdash.css">
-</head>
-<body>
+    <link rel="stylesheet" href="hosdash.css" />
+    <style>
+      /* General Styles */
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f9fa;
+        margin: 0;
+        padding: 0;
+      }
 
+      /* Sidebar */
+      .sidebar {
+        width: 200px;
+        height: 100vh;
+        background: #fff;
+        border-right: 1px solid #ddd;
+        position: fixed;
+        padding: 20px;
+      }
+
+      .logo-link {
+        text-decoration: none; /* Remove underline */
+      }
+
+      .sidebar h2 {
+        color: #004aad;
+        margin-bottom: 20px;
+      }
+
+      .sidebar ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      .sidebar ul li {
+        padding: 10px 0;
+      }
+
+      .sidebar ul li a {
+        text-decoration: none;
+        color: black;
+        display: block;
+      }
+
+      .sidebar ul li.active {
+        background: #e9ecef;
+        font-weight: bold;
+      }
+
+      .settings {
+        margin-top: 20px;
+      }
+
+      .settings a {
+        display: block;
+        text-decoration: none;
+        color: black;
+        padding: 10px 0;
+      }
+
+      /* Content */
+      .content {
+        margin-left: 260px;
+        padding: 15px;
+      }
+
+      /* Navbar */
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: white;
+        padding: 10px;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .navbar-left h3 {
+        margin: 0;
+      }
+
+      .navbar-right {
+        display: flex;
+        align-items: center;
+      }
+
+      .hospital-btn {
+        text-decoration: none;
+        color: #004aad;
+        margin-right: 20px;
+        font-weight: bold;
+      }
+
+      .user-profile {
+        display: flex;
+        align-items: center;
+        background: white;
+        padding: 15px;
+        border-radius: 5%;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .user-profile img {
+        width: 50px;
+        height: 45px;
+        border-radius: 50%;
+        margin-right: 10px;
+      }
+
+      /* Patient Section */
+      .patient-section {
+        margin-top: 20px;
+      }
+
+      .patient-section h4 {
+        font-size: 1.5rem;
+        color: #333;
+      }
+
+      .patient-section p {
+        font-size: 1.1rem;
+        color: #555;
+      }
+
+      /* Button container (positioning) */
+      .button-container {
+        position: absolute;
+        left: 16%;
+        top: 20%;
+        transform: translateY(-50%);
+      }
+
+      /* Assign Doctor Button styles */
+      .assign-doctor-btn {
+        padding: 12px 24px;
+        font-size: 16px;
+        background-color: #004aad;
+        color: white;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+      }
+
+      .assign-doctor-btn:hover {
+        background-color: #003366;
+        transform: translateX(10px);
+      }
+
+      .assign-doctor-btn:focus {
+        outline: none;
+      }
+
+      .free-space {
+        height: 55px; /* Adjust this to set the desired space between sections */
+      }
+
+      .recent-appointments,
+      .past-appointments {
+        margin-top: 30px;
+      }
+
+      .recent-appointments h5,
+      .past-appointments h5 {
+        font-size: 1.2rem;
+        color: #333;
+      }
+
+      .table {
+        width: 100%;
+        margin-top: 10px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+      }
+
+      .table th,
+      .table td {
+        padding: 12px;
+        text-align: left;
+      }
+
+      .table th {
+        background-color: #f2f2f2;
+      }
+
+      .table a {
+        color: #004aad;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      .table a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
     <!-- Sidebar -->
     <div class="sidebar">
-        <a href="landing.html" class="logo-link">
-            <h2 class="logo">DataCure</h2>
-        </a>          
-        <ul>
-            <li class="active"><a href="hosdash.html">Overview</a></li>
-            <li><a href="hosdoc.html">Doctor</a></li>
-            <li><a href="hospatient.html">Patients</a></li>
-        </ul>
-        <div class="settings">
-            <a href="landing.html">Logout</a>
-        </div>
+      <a href="landing.html" class="logo-link">
+        <h2 class="logo">DataCure</h2>
+      </a>
+      <ul>
+        <li class="active"><a href="hosdash.html">Overview</a></li>
+        <li><a href="hosdoc.html">Doctor</a></li>
+        <li><a href="hospatient.html">Patients</a></li>
+      </ul>
+      <div class="settings">
+        <a href="landing.html">Logout</a>
+      </div>
     </div>
 
     <!-- Main Content -->
     <div class="content">
-        <!-- Navbar -->
-        <div class="navbar">
-            <h3>Overview</h3>
-            <div class="user-profile">
-                <!-- LOCAL PROFILE IMAGE -->
-                <img src="images/laden.jpeg" alt="User Profile">
-                <span>Hospital er Beta</span>
-            </div>
+      <!-- Navbar -->
+      <div class="navbar">
+        <h3>Overview</h3>
+        <div class="user-profile">
+          <!-- LOCAL PROFILE IMAGE -->
+          <img src="images/laden.jpeg" alt="User Profile" />
+          <span>Hospital er Beta</span>
         </div>
+      </div>
 
-        <!-- Stat Cards Section -->
-        <div class="stats">
-            <div class="card pink">
-                <h4>Doctors</h4>
-                <p>15</p>
-            </div>
-            <div class="card yellow">
-                <h4>Patients</h4>
-                <p>65</p>
-            </div>
-            <div class="card green">
-                <h4>Today Appointments</h4>
-                <p>130</p>
-            </div>
+      <!-- Stat Cards Section -->
+      <div class="stats">
+        <div class="card pink">
+          <h4>Doctors</h4>
+          <p>15</p>
         </div>
+        <div class="card yellow">
+          <h4>Patients</h4>
+          <p>65</p>
+        </div>
+        <div class="card green">
+          <h4>Today Appointments</h4>
+          <p>130</p>
+        </div>
+      </div>
     </div>
-
-</body>
+  </body>
 </html>
