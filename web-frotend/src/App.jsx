@@ -14,6 +14,14 @@ import FindSpecialist from "./Pages/Dashboard/User/Appointment/FindSpecialist";
 import UserAppointmnetLayout from "./Component/UserAppointmnetLayout";
 import UserPayment from "./Pages/Dashboard/User/Payment/UserPayment";
 import UserProfile from "./Pages/Dashboard/User/Profile/UserProfile";
+import DoctorDashboardLayout from "./Component/DoctorDashboardLayout";
+import DoctorDashboard from "./Pages/Dashboard/Doctor/DoctorDashboard";
+import PaitentList from "./Pages/Dashboard/Doctor/PaitentList/PaitentList";
+import HospitalDashboardLayout from "./Component/HospitalDashboardLayout";
+import HospitalDashboard from "./Pages/Dashboard/Hospital/HospitalDashboard";
+import HospitalPaitentList from "./Pages/Dashboard/Hospital/PaitentList/HospitalPaitentList";
+import HospitalDoctorList from "./Pages/Dashboard/Hospital/DoctorList/HospitalDoctorList";
+import Page404 from "./Pages/util/Page404";
 
 export default function App() {
   return (
@@ -36,6 +44,20 @@ export default function App() {
             <Route path="meet" element={<UserMeet />} />
             <Route path="profile" element={<UserProfile />} />
           </Route>
+          <Route path="/doctor-dashboard" element={<DoctorDashboardLayout />}>
+            <Route index element={<DoctorDashboard />} />
+            <Route path="paitentlist" element={<PaitentList />} />
+          </Route>
+          <Route
+            path="/hospital-dashboard"
+            element={<HospitalDashboardLayout />}
+          >
+            <Route index element={<HospitalDashboard />} />
+            <Route path="paitent" element={<HospitalPaitentList />} />
+            <Route path="doctor" element={<HospitalDoctorList />} />
+          </Route>
+
+          <Route path="*" element={<Page404 />} />
         </Routes>
       </BrowserRouter>
     </>
